@@ -5,9 +5,9 @@
 # Crawl 
 Slightly modified version of unity modding toolkit BepInEX that allows it to run under the weird unity version that Crawl uses. the only source changes made are to XHarmony.dll found in the BepInEx.Harmony repo. 
 
-The rest of the changes are exclusively in the config file because the default entrypoint in unityengine.dll makes crawl very unhappy, since it tries to create GaeOjects before unity is ready, and it causes unity to freak out.
+The rest of the changes are exclusively in the config file because the default entrypoint in unityengine.dll makes crawl very unhappy, since it tries to create GameObjects before unity is ready, and it causes unity to freak out.
 
-If youre developing, all you need to know is your prepatchers will work just like normal, but the initialize functions in your runtime plugins might run a frame or 2 into the game starting instead of prior.
+If youre developing, all you need to know is your prepatchers will work just like normal, but the initialize functions in your runtime plugins might run a frame or 2 into the game starting instead of prior. other than that, use the same guides as seen below, and you should be fine.
 
 # BepInEx
 ![Github All Releases](https://img.shields.io/github/downloads/bepinex/bepinex/total.svg)
